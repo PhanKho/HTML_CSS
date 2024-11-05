@@ -1,0 +1,62 @@
+.header
+{
+    background-color: white ;
+    height: 110px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10) ;
+}
+
+.header__navbar
+{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.header__navbar-list
+{
+    list-style: none;
+    padding-left: 0px;
+    
+} 
+
+.header__navbar-iterm{
+    display: inline-block;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;       
+    letter-spacing: -0.32px;
+}
+
+.header__navbar-iterm + .header__navbar-iterm
+{
+    margin-left: 60px;
+}
+
+.header__navbar-icon{
+    height: 22px;
+    flex-shrink: 0;
+    
+}
+
+.header__navbar-iterm--name
+{
+    color: #000;
+    font-family: Lobster;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header__navbar-iterm--dot
+{
+    color: #FF7426;
+    font-family: Lobster;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 0px !important; 
+    
+}
