@@ -1,62 +1,423 @@
 .header
 {
     background-color: white ;
-    height: 110px;
+    height: 11rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.10) ;
-}
-
-.header__navbar
-{
+    align-items: center;
     display: flex;
     justify-content: space-around;
-    position: relative;
-}
+}  
 
-.header__navbar-list
-{
-    list-style: none;
-    padding-left: 0px;
-    
-} 
+.header__navbar-list{
+    flex-shrink: 0;
+}
 
 .header__navbar-iterm{
     display: inline-block;
     color: #000;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 500;       
     letter-spacing: -0.32px;
-}
-
-.header__navbar-iterm + .header__navbar-iterm
-{
-    margin-left: 60px;
-}
-
-.header__navbar-icon{
-    height: 22px;
     flex-shrink: 0;
     
 }
 
-.header__navbar-iterm--name
+.header__navbar-iterm + .header__navbar-iterm
 {
-    color: #000;
-    font-family: Lobster;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    margin-left: 6rem;
 }
 
-.header__navbar-iterm--dot
-{
+.header__navbar-list #brand-name{
+    color: #000;
+    font-family: Lobster;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+.header__navbar-list #orange-dot{
     color: #FF7426;
     font-family: Lobster;
-    font-size: 24px;
-    font-style: normal;
+    font-size: 2.4rem;
     font-weight: 400;
-    line-height: normal;
-    margin-left: 0px !important; 
+    margin-left: 0px ;
+}
+.header__navbar-list #socail-icon{
+    height: 2.2rem;
+}
+
+.container{
+    position: relative;
+}
+
+.container-hot-recipes{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+
+}
+
+.hand-picked-recipes{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    background-color: #000;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 570px;
+    top: 50px;
+
+}
+.hand-picked-recipes__white-bg{
+    display: flex;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: #FFF;
+    justify-content: center;
+    align-items: center;
+}
+.hand-picked{
+    width: 65px;
+    height: 65px;
+    flex-shrink: 0;
+
+}
+.hand-picked-recipes_item{
+
+    width: 130px;
+    height: 120px;
+    flex-shrink: 0;
+    stroke-width: 12px;
+    stroke: #FFF;
+    position: absolute;
+
+
+}
+.hot-recipes__box-left{
+    width: 40px;
+    height: 600px;
+    flex-shrink: 0;
+    background-color:#E7FAFE;
+    border-top-right-radius: 30px ;
+    border-bottom-right-radius: 30px;
+    margin-top: 20px;
+
+}
+.hot-recipes__box-right{
+    width: 40px;
+    height: 600px;
+    flex-shrink: 0;
+    background-color: #E7FAFE;
+    border-top-left-radius: 30px ;
+    border-bottom-left-radius: 30px;
+    margin-top:  20px;
     
 }
+
+.hot-recipes__box-center{
+    display: flex;
+}
+.box-center__hot-recipes{
+    width: 620px;
+    height: 640px;
+    flex-shrink: 0;
+    background-color: #E7FAFE;
+    border-top-left-radius: 40px ;
+    border-bottom-left-radius: 40px;
+    position: relative;
+}
+.baked-chicken{
+    height: 640px;
+    right: 0px;
+    border-top-right-radius: 40px ;
+    border-bottom-right-radius: 40px;
+}
+
+.hot-recipes{
+    background-color:#fff;
+    width: 156px;
+    height: 45px;
+    flex-shrink: 0;
+    display: flex;
+    border-radius: 38px;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 50px;
+    margin-left: 50px; */
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+}
+.image14{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+.hotrecipes{
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.28px;
+    margin-left: 13px;
+}
+.Spicy-delicious-chicken-wings{
+    color: #000;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -2.56px;
+}
+.box-Spicy-delicious{
+    width: 520px;
+    height: 154px;
+    position: absolute;
+    top: 63px;
+    left: 50px;
+    
+}
+.box-Lorem-ipsum{
+    width: 520px;
+    height: 56px;
+    position: absolute;
+    top: 289px;
+    left: 50px;
+}
+
+.text-Lorem-ipsum{
+    color: rgba(0, 0, 0, 0.60);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+
+
+
+.box-time-forkkinfe{
+    display: flex;
+    position: absolute;
+    top: 391px;
+    left: 50px;
+}
+.time-forkkinfe{
+    width: 139px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.time-forkkinfe-icon{
+    height: 24px;
+    width: 24px;
+}
+.time-forkkinfe-text{
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.60);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.28px;
+}
+.time-forkkinfe--small{
+    width: 119px;
+    margin-left: 16px;
+}
+
+.hot-recipes__avt
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: lightgray 50% / cover no-repeat;
+    top: 535px;
+    left: 50px;
+}
+.hot-recipes__name{
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.32px;
+    position: absolute;
+    left: 116px;
+    bottom: 67px;
+
+}
+.hot-recipes__date{
+    color: rgba(0, 0, 0, 0.60);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.28px;
+    position: absolute;
+    left: 116px;
+    bottom: 44px;
+}
+
+.hot-recipes__view-recipes{
+    width: 200px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+.view-recipes__iterm{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.28px;
+}
+.view-recipes__icon-play{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-left: 15px;
+
+}
+
+.container-categories{
+    display: flex;
+    background-color: #efbaba;
+    width: 1280px;
+    height: 342px;
+    position: relative;
+    top: 160px;
+    margin:0 auto;
+
+}
+.container-categories__navbar{
+   display: flex;
+}
+.categories__nabar-iterm{
+    width:238px ;
+    height:58px ;
+}
+.nabar-iterm__text{
+    color: #000;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.92px;
+    margin-top: 0px;
+}
+
+.categories__navbar-btn{
+    display: flex;
+    width:200px ;
+    height:60px ;
+    border-radius: 16px;
+    background: #E7FAFE;
+    margin-left: 842px;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-btn__view-all-categories{
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.32px;
+}
+
+
+.categories__list{
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+}
+
+.list__item{
+    width: 180px;
+    height: 152px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: linear-gradient(180deg, rgba(112, 130, 70, 0.00) 0%, rgba(112, 130, 70, 0.10) 100%);
+    justify-content: center;
+    position: relative;
+}
+.list__item + .list__item{
+    margin-left: 40px;
+}
+
+
+.item-img{
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 102px;
+    left: 40px;
+}
+
+.item-blur{
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 82px;
+    left: 60px;
+}
+.item-text{
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.36px;
+    margin-top: 110px;
+}
+
+.container-simple-tasty-recipes{
+    width: 1440px;
+    height: 1616px;
+    background-color: #FF7426;
+    position: relative;
+    top: 335px;
+    margin: 0   auto;  
+}
+.Simple-tasty-title{
+    color: #000;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -1.92px;
+    margin: 0 auto;
+}
+
