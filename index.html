@@ -19,21 +19,21 @@
         <header class="header">
 
             <ul class="header__navbar-list">
-                <li id="brand-name" class="header__navbar-iterm">Foodieland</li>
-                <li id="orange-dot" class="header__navbar-iterm">.</li>
+                <li id="brand-name" class="header__navbar-item">Foodieland</li>
+                <li id="orange-dot" class="header__navbar-item">.</li>
             </ul>
     
             <ul class="header__navbar-list">
-                <li class="header__navbar-iterm">Home</li>
-                <li class="header__navbar-iterm">Recipes</li>
-                <li class="header__navbar-iterm">Blog</li>
-                <li class="header__navbar-iterm">Contact</li>
-                <li class="header__navbar-iterm">About us</li>
+                <li class="header__navbar-item">Home</li>
+                <li class="header__navbar-item">Recipes</li>
+                <li class="header__navbar-item">Blog</li>
+                <li class="header__navbar-item">Contact</li>
+                <li class="header__navbar-item">About us</li>
                      
             </ul>
     
             <div class="header__navbar-list">
-                <img id="socail-icon" class="header__navbar-iterm" src="assets/img/Social.png" alt="Socail icon">            
+                <img id="socail-icon" class="header__navbar-item" src="assets/img/Social.png" alt="Socail icon">            
             </div>
             
         </header>
@@ -41,146 +41,383 @@
 
         <div class="container">
             <!--hot recipes -->
-            <div class="container-hot-recipes">
-                <div  class="hot-recipes__box-left">
-                </div>
+            <div class="container__hot-recipes">
 
-                    
-                <div class="hot-recipes__box-center">
-                    <div class="box-center__hot-recipes">
-
-                        <div class="hot-recipes">
-                            <img class="image14"  src="assets/img/image 14.png" alt="">
-                            <p class="hotrecipes">Hot Recipes</p>
-                        </div>
-
-                        <div class="box-Spicy-delicious">
-                        <p class="Spicy-delicious-chicken-wings">Spicy delicious chicken wings</p>
-                        </div>
-
-
-                        <div class="box-Lorem-ipsum">
-                        <p class="text-Lorem-ipsum" >Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim</p>
-                        </div>
-
-                        <div class="box-time-forkkinfe">
-                        <div class="time-forkkinfe">
-                            <img class="time-forkkinfe-icon" src="assets/img/Timer.png" alt="timer">
-                            <p class="time-forkkinfe-text">30 Minutes</p>
-                        </div>
-
-                        <div  class="time-forkkinfe time-forkkinfe--small">
-                            <img class="time-forkkinfe-icon" src="assets/img/ForkKnife.png" alt="ForkKnife">
-                            <p class="time-forkkinfe-text">Chicken</p>
-                        </div>
-                        </div>
-                       
-                        <img class="hot-recipes__avt" src="assets/img/Ellipse 2.png" alt="avt">
-                        <p class="hot-recipes__name">John Smith</p>
-                        <p class="hot-recipes__date">15 March 2022</p>
-
-                        <div class="hot-recipes__view-recipes">
-
-                            <p class="view-recipes__iterm">View Recipes</p>
-                             <img class="view-recipes__icon-play" src="assets/img/PlayCircle.png" alt="icon play">
-                        </div>
-
-                        <div class="hand-picked-recipes">
-                            <div class="hand-picked-recipes__white-bg">
-                                <img class="hand-picked" src="assets/img/image 15.png" alt="like-hand">
-                            </div>
-                            <img class="hand-picked-recipes_item" src="assets/img/Ellipse 3.png" alt="">
+                <div id="block-left" class="container__hot-recipes-list">
     
+                    <div class="container__hot-recipes-recipes">
+                        <img src="assets/img/image 14.png" alt="hot-recipes-icon">
+                        <p>Hot Recipes</p>
+                    </div>
+                    
+                    <p class="container__hot-recipes-title">Spicy delicious chicken wings</p>
+                    <p class="container__hot-recipes-description">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim</p>
+                    
+                    <div class="container__hot-recipes-item">
+
+                        <div class="container__hot-recipes-time-type">
+                            <img src="assets/img/Timer.png" alt="time">
+                            <p>30 Minutes</p>
                         </div>
 
-
+                        <div  class="container__hot-recipes-time-type container__hot-recipes-time-type--small">
+                            <img src="assets/img/ForkKnife.png" alt="ForkKnife">
+                            <p>Chicken</p>
+                        </div>
                     </div>
 
-                    <div class="box-center__baked-chicken">
-                        
-                        <img class="baked-chicken" src="assets/img/baked-chicken-wings-asian-style-tomatoes-sauce-plate 1.png" alt="baked chicken">
-
-                    </div>
+                    <div class="container__hot-recipes-list-info-btn">
+                        <div class="container__hot-recipes-info">
+                            <img class="container__hot-recipes-avt" src="assets/img/Ellipse 2.png" alt="avt">
+                            <div class="container__hot-recipes-name-date">
+                                <p>John Smith</p>
+                                <p>15 March 2022</p>
+                            </div>
+                        </div>
+                        <div class="container__hot-recipes-btn-view-all">
+                            <p>View Recipes</p>
+                            <img src="assets/img/PlayCircle.png" alt="icon play">
+                        </div> 
+                    </div>               
                 </div>
 
-                <div class="hot-recipes__box-right">
+                <div id="block-right" class="container__hot-recipes-list">
+                    <img id="baked-chicken" src="assets/img/baked-chicken-wings-asian-style-tomatoes-sauce-plate 1.png" alt="baked chicken">
                 </div>
+                
             </div>
 
+            <div class="container__categories">
 
+                <div class="container__categories-top">
+                    <p class="container__categories-title">Categories</p>
+                    <div class="container__categories-btn">
+                        <p>View All Categories</p>
+                    </div>
+                </div>
 
+                <div class="container__categories-list">
+                        
+                    <div class="container__categories-item">
+                        <img class="container__categories-blur" src="assets/img/image-1-blur.png" alt="Rice-img-blur">
+                        <img class="container__categories-img" src="assets/img/categories-img-1.png" alt="Vice-img">
+                        <p>Breakfast</p>
+                    </div>
+    
+                    <div class="container__categories-item">
+                        <img class="container__categories-blur" src="assets/img/image-2-blur.png" alt="Vegan-img-blur">
+                        <img class="container__categories-img" src="assets/img/categories-img-2.png" alt="Vegan-img">
+                        <p>Vegan</p>
+                    </div>
+    
+                    <div class="container__categories-item">
+                        <img class="container__categories-blur" src="assets/img/image-3-blur.png" alt="Meat-img-blur">
+                        <img class="container__categories-img" src="assets/img/categories-img-3.png" alt="Meat-img">
+                        <p>Meat</p>
+                    </div>
+    
+                    <div class="container__categories-item">
+                        <img class="container__categories-blur" src="assets/img/image-4-blur.png" alt="Dessert-img-blur">
+                        <img class="container__categories-img" src="assets/img/categories-img-4.png" alt="Dessert-img">
+                        <p>Dessert</p>
+                    </div>
+    
+                    <div class="container__categories-item">
+                        <img class="container__categories-blur" src="assets/img/image-5-blur.png" alt="Lunch-img-blur">
+                        <img class="container__categories-img" src="assets/img/categories-img-5.png" alt="Lunch-img">
+                        <p>Lunch</p>
+                    </div>
+    
+                    <div class="container__categories-item">
+                        <img class="container__categories-blur" src="assets/img/image-6-blur.png" alt="Chocolate-img-blur">
+                        <img class="container__categories-img" src="assets/img/categories-img-6.png" alt="Chocolate-img">
+                        <p>Chocolate</p>
+                    </div>
+                </div>
+            </div>
 
             <!-- categories -->
-            <div class="container-categories">
+            <!-- <div class="container__categories">
 
-                <div class="container-categories__navbar">
+                <div class="container__categories-navbar">
 
-                    <div class="categories__nabar-iterm">
-                        <p class="nabar-iterm__text">Categories</p>
+                    <div class="container__categories-title">
+                        <p>Categories</p>
                     </div>
-                    <div class="categories__navbar-btn">
-                        <p class="navbar-btn__view-all-categories">View All Categories</p>
+                    <div class="container__categories-btn">
+                        <p>View All Categories</p>
                     </div>
                 </div>
 
                     
-                <div class="categories__list">
+                <div class="container__categories-list">
                         
-                    <div class="list__item">
-                        <img class="item-blur" src="assets/img/image-1-blur.png" alt="Rice-img-blur">
-                        <img class="item-img" src="assets/img/categories-img-1.png" alt="Vice-img">
-                        <p class="item-text">Breakfast</p>
+                    <div class="container__categories-item">
+                        <img class="container__categories-blur" src="assets/img/image-1-blur.png" alt="Rice-img-blur">
+                        <img class="container__categories-img" src="assets/img/categories-img-1.png" alt="Vice-img">
+                        <p>Breakfast</p>
                     </div>
     
-                    <div class="list__item">
-                        <img class="item-blur" src="assets/img/image-2-blur.png" alt="Vegan-img-blur">
-                        <img class="item-img" src="assets/img/categories-img-2.png" alt="Vegan-img">
-                        <p class="item-text">Vegan</p>
+                    <div class="container__categories-item">
+                        <img class="container__categories-blur" src="assets/img/image-2-blur.png" alt="Vegan-img-blur">
+                        <img class="container__categories-img" src="assets/img/categories-img-2.png" alt="Vegan-img">
+                        <p>Vegan</p>
                     </div>
     
-                    <div class="list__item">
-                        <img class="item-blur" src="assets/img/image-3-blur.png" alt="Meat-img-blur">
-                        <img class="item-img" src="assets/img/categories-img-3.png" alt="Meat-img">
-                        <p class="item-text">Meat</p>
+                    <div class="container__categories-item">
+                        <img class="container__categories-blur" src="assets/img/image-3-blur.png" alt="Meat-img-blur">
+                        <img class="container__categories-img" src="assets/img/categories-img-3.png" alt="Meat-img">
+                        <p>Meat</p>
                     </div>
     
-                    <div class="list__item">
-                        <img class="item-blur" src="assets/img/image-4-blur.png" alt="Dessert-img-blur">
-                        <img class="item-img" src="assets/img/categories-img-4.png" alt="Dessert-img">
-                        <p class="item-text">Dessert</p>
+                    <div class="container__categories-item">
+                        <img class="container__categories-blur" src="assets/img/image-4-blur.png" alt="Dessert-img-blur">
+                        <img class="container__categories-img" src="assets/img/categories-img-4.png" alt="Dessert-img">
+                        <p>Dessert</p>
                     </div>
     
-                    <div class="list__item">
-                        <img class="item-blur" src="assets/img/image-5-blur.png" alt="Lunch-img-blur">
-                        <img class="item-img" src="assets/img/categories-img-5.png" alt="Lunch-img">
-                        <p class="item-text">Lunch</p>
+                    <div class="container__categories-item">
+                        <img class="container__categories-blur" src="assets/img/image-5-blur.png" alt="Lunch-img-blur">
+                        <img class="container__categories-img" src="assets/img/categories-img-5.png" alt="Lunch-img">
+                        <p>Lunch</p>
                     </div>
     
-                    <div class="list__item">
-                        <img class="item-blur" src="assets/img/image-6-blur.png" alt="Chocolate-img-blur">
-                        <img class="item-img" src="assets/img/categories-img-6.png" alt="Chocolate-img">
-                        <p class="item-text">Chocolate</p>
+                    <div class="container__categories-item">
+                        <img class="container__categories-blur" src="assets/img/image-6-blur.png" alt="Chocolate-img-blur">
+                        <img class="container__categories-img" src="assets/img/categories-img-6.png" alt="Chocolate-img">
+                        <p>Chocolate</p>
                     </div>
                 </div>
             </div>
 
 
-            <div class="container-simple-tasty-recipes">
 
-                <div class="Simple-tasty">
-                    <p class="Simple-tasty-title">Simple and tasty recipes</p>
-                </div>
-                <div class="Simple-tasty-tex" >
-                    <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim</p>
-                </div>
+            <div class="container__recipes">
 
+                <h1 class="container__recipes-title">Simple and tasty recipes</h1>
+                <p class="container__recipes-description">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim</p>
+                
+                <div class="container__recipes-list">
+
+                    <div class="container__recipes-item">
+                        <img class="container__recipes-bg" src="assets/img/recipes-list-bg-1.png" alt="dish image">
+                        <img class="container__recipes-icon-heart" src="assets/img/icon-heart-active.png" alt="icon heart">
+                        <p class="container__recipes-dish">Big and Juicy Wagyu Beef Cheeseburger</p>
+                        <p class="container__recipes-time">30 Minutes</p>
+                        <img class="container__recipes-icon-time" src="assets/img/Timer.png" alt="icon clock">
+                        <p class="container__recipes-type">Snack</p>
+                        <img class="container__recipes-icon-fork-kinfe" src="assets/img/ForkKnife.png" alt="icon fork knife">
+                    </div>
+                    <div class="container__recipes-item">
+                        <img class="container__recipes-bg" src="assets/img/recipes-list-bg-2.png" alt="dish image">
+                        <img class="container__recipes-icon-heart " src="assets/img/icon-heart.png" alt="icon heart">
+                        <p class="container__recipes-dish">Fresh Lime Roasted Salmon with Ginger Sauce </p>
+                        <p class="container__recipes-time">30 Minutes</p>
+                        <img class="container__recipes-icon-time" src="assets/img/Timer.png" alt="icon clock">
+                        <p class="container__recipes-type">Fish</p>
+                        <img class="container__recipes-icon-fork-kinfe" src="assets/img/ForkKnife.png" alt="icon fork knife">
+                    </div>
+                    <div class="container__recipes-item">
+                        <img class="container__recipes-bg" src="assets/img/recipes-list-bg-3.png" alt="dish image">
+                        <img class="container__recipes-icon-heart " src="assets/img/icon-heart.png" alt="icon heart">
+                        <p class="container__recipes-dish">Strawberry Oatmeal Pancake with Honey Syrup</p>
+                        <p class="container__recipes-time">30 Minutes</p>
+                        <img class="container__recipes-icon-time" src="assets/img/Timer.png" alt="icon clock">
+                        <p class="container__recipes-type">Breakfast</p>
+                        <img class="container__recipes-icon-fork-kinfe" src="assets/img/ForkKnife.png" alt="icon fork knife">
+                    </div>
+                    <div class="container__recipes-item">
+                        <img class="container__recipes-bg" src="assets/img/recipes-list-bg-4.png" alt="dish image">
+                        <img class="container__recipes-icon-heart " src="assets/img/icon-heart-active.png" alt="icon heart">
+                        <p class="container__recipes-dish">Fresh and Healthy Mixed Mayonnaise Salad</p>
+                        <p class="container__recipes-time">30 Minutes</p>
+                        <img class="container__recipes-icon-time" src="assets/img/Timer.png" alt="icon clock">
+                        <p class="container__recipes-type">Healthy</p>
+                        <img class="container__recipes-icon-fork-kinfe" src="assets/img/ForkKnife.png" alt="icon fork knife">
+                    </div>
+                    <div class="container__recipes-item">
+                        <img class="container__recipes-bg" src="assets/img/recipes-list-bg-5.png" alt="dish image">
+                        <img class="container__recipes-icon-heart " src="assets/img/icon-heart.png" alt="icon heart">
+                        <p class="container__recipes-dish">Chicken Meatballs with Cream Cheese</p>
+                        <p class="container__recipes-time">30 Minutes</p>
+                        <img class="container__recipes-icon-time" src="assets/img/Timer.png" alt="icon clock">
+                        <p class="container__recipes-type">Meat</p>
+                        <img class="container__recipes-icon-fork-kinfe" src="assets/img/ForkKnife.png" alt="icon fork knife">
+                    </div>
+                    <div class="container__recipes-item container__recipes-item--special">
+                        <img class="container__recipes-star" src="assets/img/Star 1.png" alt="effect star">
+                        <p class="container__recipes-dish-special">Don’t forget to eat healthy food</p>
+                        <img class="container__recipes-bg-special" src="assets/img/recipes-list-bg-6.png" alt="dish image">
+                        <p class="container__recipes-url">www.foodieland.com</p>
+                    </div>
+                    <div class="container__recipes-item">
+                        <img class="container__recipes-bg" src="assets/img/recipes-list-bg-7.png" alt="dish image">
+                        <img class="container__recipes-icon-heart " src="assets/img/icon-heart-active.png" alt="icon heart">
+                        <p class="container__recipes-dish">Fruity Pancake with Orange & Blueberry</p>
+                        <p class="container__recipes-time">30 Minutes</p>
+                        <img class="container__recipes-icon-time" src="assets/img/Timer.png" alt="icon clock">
+                        <p class="container__recipes-type">Sweet</p>
+                        <img class="container__recipes-icon-fork-kinfe" src="assets/img/ForkKnife.png" alt="icon fork knife">
+                    </div>
+                    <div class="container__recipes-item">
+                        <img class="container__recipes-bg" src="assets/img/recipes-list-bg-8.png" alt="dish image">
+                        <img class="container__recipes-icon-heart " src="assets/img/icon-heart.png" alt="icon heart">
+                        <p class="container__recipes-dish">The Best Easy One Pot Chicken and Rice</p>
+                        <p class="container__recipes-time">30 Minutes</p>
+                        <img class="container__recipes-icon-time" src="assets/img/Timer.png" alt="icon clock">
+                        <p class="container__recipes-type">Snack</p>
+                        <img class="container__recipes-icon-fork-kinfe" src="assets/img/ForkKnife.png" alt="icon fork knife">
+                    </div>
+                    <div class="container__recipes-item">
+                        <img class="container__recipes-bg" src="assets/img/recipes-list-bg-9.png" alt="dish image">
+                        <img class="container__recipes-icon-heart " src="assets/img/icon-heart.png" alt="icon heart">
+                        <p class="container__recipes-dish">The Creamiest Creamy Chicken and Bacon Pasta</p>
+                        <p class="container__recipes-time">30 Minutes</p>
+                        <img class="container__recipes-icon-time" src="assets/img/Timer.png" alt="icon clock">
+                        <p class="container__recipes-type">Noodles</p>
+                        <img class="container__recipes-icon-fork-kinfe" src="assets/img/ForkKnife.png" alt="icon fork knife">
+                    </div>
+                </div>
             </div>
-        
+
+
+            <div class="container__chef">
+                <p class="container__chef-title">Everyone can be a chef in their own kitchen</p>
+                <p class="container__chef-description">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim</p>
+                <div class="container__chef-btn-learn-more">
+                    <p>Learn More</p>
+                </div>
+                <div class="container__chef-list">
+                    <div id="chef-bg" class="container__chef-item">
+                    </div>
+                    <img id="chef-image" class="container__chef-item" src="assets/img/container-chef-IMG.png" alt="chef-img">
+                    <img id="chef-tomato" class="container__chef-item" src="assets/img/image 27.png" alt="tomato">
+                    <img id="chef-meat" class="container__chef-item" src="assets/img/image 21.png" alt="meat">
+                    <img id="chef-onion" class="container__chef-item" src="assets/img/image 28.png" alt="onion">
+                    <img id="chef-cabbage" class="container__chef-item" src="assets/img/image 20.png" alt="cabbage">
+                </div>
+            </div>
+
+            <div class="container__dedelicious-recipe">
+                <p class="container__dedelicious-recipe-title">Try this delicious recipe to make your day</p>
+                <p class="container__dedelicious-recipe-description">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim</p>
+               
+                <div class="container__dedelicious-recipe-list">
+
+                    <div class="container__dedelicious-recipe-item">
+                        <img class="container__dedelicious-recipe-bg" src="assets/img/dedelicious-recipe-bg-1.png" alt="dish image">
+                        <img class="container__dedelicious-recipe-icon-heart " src="assets/img/icon-heart-active.png" alt="icon heart">
+                        <p class="container__dedelicious-recipe-dish">Mixed Tropical Fruit Salad with Superfood Boosts</p>
+                        <img class="container__dedelicious-recipe-icon-time" src="assets/img/Timer.png" alt="icon clock">
+                        <p class="container__dedelicious-recipe-time">30 Minutes</p>
+                        <img class="container__dedelicious-recipe-icon-fork-kinfe" src="assets/img/ForkKnife.png" alt="icon fork knife">
+                        <p class="container__dedelicious-recipe-type">Snack</p>
+                    </div>
+                    <div class="container__dedelicious-recipe-item">
+                        <img class="container__dedelicious-recipe-bg" src="assets/img/dedelicious-recipe-bg-2.png" alt="dish image">
+                        <img class="container__dedelicious-recipe-icon-heart " src="assets/img/icon-heart.png" alt="icon heart">
+                        <p class="container__dedelicious-recipe-dish">Big and Juicy Wagyu Beef Cheeseburger</p>
+                        <img class="container__dedelicious-recipe-icon-time" src="assets/img/Timer.png" alt="icon clock">
+                        <p class="container__dedelicious-recipe-time">30 Minutes</p>
+                        <img class="container__dedelicious-recipe-icon-fork-kinfe" src="assets/img/ForkKnife.png" alt="icon fork knife">
+                        <p class="container__dedelicious-recipe-type">Western</p>
+                    </div>
+                    <div class="container__dedelicious-recipe-item">
+                        <img class="container__dedelicious-recipe-bg" src="assets/img/dedelicious-recipe-bg-3.png" alt="dish image">
+                        <img class="container__dedelicious-recipe-icon-heart " src="assets/img/icon-heart-active.png" alt="icon heart">
+                        <p class="container__dedelicious-recipe-dish">Healthy Japanese Fried Rice with Asparagus</p>
+                        <img class="container__dedelicious-recipe-icon-time" src="assets/img/Timer.png" alt="icon clock">
+                        <p class="container__dedelicious-recipe-time">30 Minutes</p>
+                        <img class="container__dedelicious-recipe-icon-fork-kinfe" src="assets/img/ForkKnife.png" alt="icon fork knife">
+                        <p class="container__dedelicious-recipe-type">Healthy</p>
+                    </div>
+                    <div class="container__dedelicious-recipe-item">
+                        <img class="container__dedelicious-recipe-bg" src="assets/img/dedelicious-recipe-bg-4.png" alt="dish image">
+                        <img class="container__dedelicious-recipe-icon-heart " src="assets/img/icon-heart.png" alt="icon heart">
+                        <p class="container__dedelicious-recipe-dish">Cauliflower Walnut Vegetarian Taco Meat</p>
+                        <img class="container__dedelicious-recipe-icon-time" src="assets/img/Timer.png" alt="icon clock">
+                        <p class="container__dedelicious-recipe-time">30 Minutes</p>
+                        <img class="container__dedelicious-recipe-icon-fork-kinfe" src="assets/img/ForkKnife.png" alt="icon fork knife">
+                        <p class="container__dedelicious-recipe-type">Eastern</p>
+                    </div>
+                    <div class="container__dedelicious-recipe-item">
+                        <img class="container__dedelicious-recipe-bg" src="assets/img/dedelicious-recipe-bg-5.png" alt="dish image">
+                        <img class="container__dedelicious-recipe-icon-heart " src="assets/img/icon-heart-active.png" alt="icon heart">
+                        <p class="container__dedelicious-recipe-dish">Rainbow Chicken Salad with Almond Honey Mustard Dressing</p>
+                        <img class="container__dedelicious-recipe-icon-time" src="assets/img/Timer.png" alt="icon clock">
+                        <p class="container__dedelicious-recipe-time">30 Minutes</p>
+                        <img class="container__dedelicious-recipe-icon-fork-kinfe" src="assets/img/ForkKnife.png" alt="icon fork knife">
+                        <p class="container__dedelicious-recipe-type">Healthy</p>
+                    </div>
+                    <div class="container__dedelicious-recipe-item">
+                        <img class="container__dedelicious-recipe-bg" src="assets/img/dedelicious-recipe-bg-6.png" alt="dish image">
+                        <img class="container__dedelicious-recipe-icon-heart " src="assets/img/icon-heart.png" alt="icon heart">
+                        <p class="container__dedelicious-recipe-dish">Barbeque Spicy Sandwiches with Chips</p>
+                        <img class="container__dedelicious-recipe-icon-time" src="assets/img/Timer.png" alt="icon clock">
+                        <p class="container__dedelicious-recipe-time">30 Minutes</p>
+                        <img class="container__dedelicious-recipe-icon-fork-kinfe" src="assets/img/ForkKnife.png" alt="icon fork knife">
+                        <p class="container__dedelicious-recipe-type">Snack</p>
+                    </div>
+                    <div class="container__dedelicious-recipe-item">
+                        <img class="container__dedelicious-recipe-bg" src="assets/img/dedelicious-recipe-bg-7.png" alt="dish image">
+                        <img class="container__dedelicious-recipe-icon-heart " src="assets/img/icon-heart.png" alt="icon heart">
+                        <p class="container__dedelicious-recipe-dish">Firecracker Vegan Lettuce Wraps - Spicy!</p>
+                        <img class="container__dedelicious-recipe-icon-time" src="assets/img/Timer.png" alt="icon clock">
+                        <p class="container__dedelicious-recipe-time">30 Minutes</p>
+                        <img class="container__dedelicious-recipe-icon-fork-kinfe" src="assets/img/ForkKnife.png" alt="icon fork knife">
+                        <p class="container__dedelicious-recipe-type">Seafood</p>
+                    </div>
+                    <div class="container__dedelicious-recipe-item">
+                        <img class="container__dedelicious-recipe-bg" src="assets/img/dedelicious-recipe-bg-8.png" alt="dish image">
+                        <img class="container__dedelicious-recipe-icon-heart " src="assets/img/icon-heart-active.png" alt="icon heart">
+                        <p class="container__dedelicious-recipe-dish">Chicken Ramen Soup with Mushroom</p>
+                        <img class="container__dedelicious-recipe-icon-time" src="assets/img/Timer.png" alt="icon clock">
+                        <p class="container__dedelicious-recipe-time">30 Minutes</p>
+                        <img class="container__dedelicious-recipe-icon-fork-kinfe" src="assets/img/ForkKnife.png" alt="icon fork knife">
+                        <p class="container__dedelicious-recipe-type">Japanese</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__inbox">
+                <p class="container__inbox-title">Deliciousness to your inbox</p>
+                <p class="container__inbox-description">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim</p>
+                <div class="container__inbox-btn">
+
+                    <input type="text" placeholder="Your email address..."> 
+                    <div class="container__inbox-btn-subscribe">
+                        <p>Subscribe</p>
+                    </div>
+
+                </div>
+                <div class="container__inbox-list">
+                    <img id="salad" class="container__inbox-item" src="assets/img/photo-salad.png" alt="img salad">
+                    <img id="rucola" class="container__inbox-item" src="assets/img/rucola-png.png" alt="img rucola">
+                    <img id="plate" class="container__inbox-item" src="assets/img/Photo-plate.png" alt="img plate">
+                </div>
+            </div>
 
         </div>
         <footer class="footer">
-
-        </footer>
+            <ul class="footer__brand-name">
+                <li class="footer__item">Foodieland</li>
+                <li class="footer__item">.</li>
+            </ul>
+            <p class="footer__description">Lorem ipsum dolor sit amet, consectetuipisicing elit,</p>
+            <ul class="footer__list">
+                <li class="footer__item">Home</li>
+                <li class="footer__item">Recipes</li>
+                <li class="footer__item">Blog</li>
+                <li class="footer__item">Contact</li>
+                <li class="footer__item">About us</li>      
+            </ul>
+            </hr>
+            <ul class="footer__copyright-list">
+                <li  class="footer__copyright-item">© 2020 Flowbase. Powered by</li>
+                <li  class="footer__copyright-item">Webflow</li>
+            </ul>
+            <img class="footer__social-icon" src="assets/img/Social.png" alt="socail-icon">
+        </footer> -->
     </div>
 </body>
 </html>
